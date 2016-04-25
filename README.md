@@ -1,3 +1,5 @@
+UNIFIELD docker variant with a separate container for Postgres server
+
 # Maintainer
     vincent.greiner@tempo-consulting.fr
 
@@ -7,7 +9,7 @@
     
     will build:
         tempo/ufbuntu:10.04, core ubuntu 10.04 image
-        tempo/ufbuntu:10.04, uf image
+        tempo/uf:10.04, unifield image
         piotrdomagalski/postgres:8.4, postgres 8.4 image
         
 # Run
