@@ -1,0 +1,8 @@
+# run container_name host_unifield_work_dir
+docker run \
+    -it \
+    --name $1 \
+    -p 8061:8061 \
+    --link ufpg \
+    -v $2:/home/docker/unifield \
+    tempo/uf:10.04

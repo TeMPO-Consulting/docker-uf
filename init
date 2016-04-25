@@ -1,0 +1,8 @@
+cd ./ubuntu
+docker build -t tempo/ufbuntu:10.04 .
+
+cd ../uf
+docker build -t tempo/uf:10.04 .
+
+cd ..
+docker run --name ufpg -e POSTGRES_USER=docker -d piotrdomagalski/postgres:8.4
